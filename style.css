@@ -6,6 +6,8 @@
     --bt-off-white: #FAF8F7;
     --bt-warm-black: #201E1C;
     --bt-warm-black-alt: #282623;
+    --bt-gray:#BABABA;
+    --bt-gray-alt:#B5B0AC;
     /*Fuente*/
     --bt-font-size-title: 2.4rem;
     --bt-font-size-title-alt: 1.8rem;
@@ -35,7 +37,7 @@ body {
     font-size: 1.4rem;
 }
 
-h1, h2, {
+h1, h2 {
     font-size: var(--bt-font-size-title);
     line-height: var(--bt-font-height-title);
     color: var(--bt-just-white);
@@ -64,7 +66,7 @@ span {
 }
 
 a {
-    font-
+    text-decoration: none;
 }
 
 /* Orden de estilos
