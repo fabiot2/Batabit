@@ -8,7 +8,7 @@
     --bt-warm-black-alt: #282623;
     --bt-gray:#BABABA;
     --bt-gray-alt:#B5B0AC;
-    /*Fuente*/
+        /*Fuente*/
     --bt-font-size-title: 2.4rem;
     --bt-font-size-title-alt: 1.8rem;
     --bt-font-size-text:  1.4rem;
@@ -23,9 +23,9 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -42,6 +42,7 @@ h1, h2 {
     line-height: var(--bt-font-height-title);
     color: var(--bt-just-white);
     font-weight: 700;
+    margin: 0;
 }
 
 h3 {
@@ -49,24 +50,26 @@ h3 {
     line-height: var(--bt-font-height-title-alt);
     color: var(--bt-just-white);
     font-weight: 500;
+    margin: 0;
 }
 
 p {
     font-size: var(--bt-font-size-text);
-    line-height: var(--bt-font-size-text);
+    line-height: var(--bt-font-height-text);
     color: var(--bt-warm-black);
     font-weight: 500;
 }
 
 span {
     font-size: var(--bt-font-size-text-alt);
-    line-height: var(--bt-font-size-text-alt);
+    line-height: var(--bt-font-height-text);
     color: var(--bt-warm-black);
     font-weight: 400;
 }
 
 a {
     text-decoration: none;
+    color: var(--bt-just-white);
 }
 
 /* Orden de estilos
@@ -76,3 +79,59 @@ a {
 4. Visuales
 5. Otros
 */
+
+.hero {
+    position: relative;    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem; 
+    height: 33.4rem;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.hero img {
+    margin-top: 4rem;
+    width: 15rem;
+    height: 2.4rem;
+}
+
+.hero__title-container {
+    width: 90%;
+    max-width: 90rem;
+    min-width: 28.8rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+}
+
+.hero__title-container p {
+    margin-top: 2.4rem;
+    color: var(--bt-orange-alt);
+}
+
+.hero__button {
+    width: 22.9rem;
+    height: 4.8rem;
+    left: calc(50% - 114px);
+    position: absolute;
+    display: block;
+    padding: 1.2rem 1.6rem;
+    bottom: -1.9rem;
+    color:var(--bt-warm-black) ;
+    background-color: var(--bt-off-white);
+    font-size: var(--bt-font-size-text);
+    font-weight: 700;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.hero__button span {
+    display: inline-block;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1rem;
+    background-image: url(./assets/icons/down-arrow.svg);
+}
