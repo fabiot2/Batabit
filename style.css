@@ -295,7 +295,7 @@ main {
 }
 
 .features__container-main {
-    width: 100vw;
+    width: 100%;
     position: relative;
     min-width: 32rem;
     height: auto;
@@ -408,14 +408,39 @@ main {
 
 .planes__container-text p {
     color: var(--bt-warm-gray);
-    margin: 2.4rem auto 5rem auto;
+    margin: 2.4rem auto 2rem auto;
+}
+
+.planes__container-sliders {
+    display: flex;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 32rem;
+    gap:2rem;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 2rem;
+    overflow-y: hidden;
+}
+
+.planes__container-sliders::-webkit-scrollbar {
+    background-color: var(--bt-orange-alt);
+    height: 0.2rem;
+}
+
+.planes__container-sliders::-webkit-scrollbar-thumb {
+    background-color: var(--bt-orange);
+    border-radius: 0.2rem;
 }
 
 .card__container {
     position: relative;
+    scroll-snap-align: center ;
     width: 60.1%;
     min-width: 19rem;
-    max-width: 30rem;
+    max-width: 2.5rem;
     height: 24.7rem;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -474,5 +499,16 @@ main {
     border: 0.2rem solid var(--bt-orange);
     background-color: var(--bt-off-white);
     border-radius: 0.4rem;
-
+    font-weight: 700;
+}
+.card__info-cta span {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.2rem;
 }
