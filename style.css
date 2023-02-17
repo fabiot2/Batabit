@@ -392,6 +392,7 @@ main {
     min-width: 32rem;
     padding: 6.4rem 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 .planes__container-text {
@@ -408,4 +409,70 @@ main {
 .planes__container-text p {
     color: var(--bt-warm-gray);
     margin: 2.4rem auto 5rem auto;
+}
+
+.card__container {
+    position: relative;
+    width: 60.1%;
+    min-width: 19rem;
+    max-width: 30rem;
+    height: 24.7rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background-color: var(--bt-just-white);
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.card__recommended {
+    position: absolute;
+    top: -17px;
+    width: 10rem;
+    height: 3.1rem;
+    left: calc(50% - 50px);
+    padding: 0.8rem;
+    background-color: var(--bt-orange);
+    font-size: 1.2rem;
+    color: var(--bt-just-white);
+    font-weight: 700;
+    line-height: 1.4rem;
+    border-radius: 0.8rem;
+}
+
+.card__info-title {
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--bt-warm-black);
+}
+
+.card__info-price {
+    padding: 0.5rem 0;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    font-weight: 700;
+    color: var(--bt-warm-black);
+    font-family: 'Inter', sans-serif;
+}
+
+.card__info-price span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    vertical-align: text-top;
+}
+
+.card__info-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.card__info-cta {
+    width: 15.0rem;
+    height: 4.8rem;
+    padding: 1.2rem 1.6rem;
+    margin-top: 1.6rem;
+    border: 0.2rem solid var(--bt-orange);
+    background-color: var(--bt-off-white);
+    border-radius: 0.4rem;
+
 }
