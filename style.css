@@ -173,9 +173,11 @@ main {
 
 .exchange__tables-container {
     display: flex;
+    gap: 2rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 50%;
+    width: 80%;
+    max-width: 70rem;
     min-width: 32rem;
     margin: 2rem auto 2rem auto;
 }
@@ -192,12 +194,6 @@ main {
 
 .tables__title-commissions {
     color: var(--bt-blue);
-}
-
-.exchange__table {
-    margin: 4rem auto;
-    min-width: 23rem;
-    max-width: 30rem;
 }
 
 .exchange__table-currency {
@@ -244,11 +240,11 @@ main {
     border-bottom-left-radius: 0.8rem;
 }
 
-.exchange__tables-container .table__bottom-right {
+.exchange__table-container .table__bottom-right {
     border-bottom-right-radius: 0.8rem;
 }
 
-.exchange__tables-container .table__indicator {
+.exchange__table-container .table__indicator {
     width: 1.5rem;
     height: 1.5rem;
     display: inline-block;
@@ -258,11 +254,11 @@ main {
     background-size: cover;
 }
 
-.exchange__tables-container .indicator-up {
+.exchange__table-container .indicator-up {
     background-image: url('./assets/icons/trending-up.svg');
 }
 
-.exchange__tables-container .indicator-down {
+.exchange__table-container .indicator-down {
     background-image: url('./assets/icons/trending-down.svg');
 }
 
