@@ -294,3 +294,83 @@ main {
     font-weight: 700;
 }
 
+.features__container-main {
+    width: 100vw;
+    position: relative;
+    min-width: 32rem;
+    height: auto;
+    padding: 6rem 1.5rem 4rem 1.5rem;
+    background-color: var(--bt-warm-black);
+    text-align: center;
+}
+
+.features__icon {
+    position: absolute;
+    width: 4rem;
+    height: 2.5rem;
+    top: -1.2rem;
+    left: calc(50% - 20px);
+    background-image: url(./assets/icons/batata.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.feature__title {
+    margin-bottom: 2.4rem ;
+}
+
+.feature__text {
+    margin-bottom: 3.2rem ;
+}
+
+.features__container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 83rem;
+    margin: 0 auto;
+}
+
+.feature__container-card {
+    min-width: 28.2rem;
+    max-width: 40rem;
+    min-height: 15rem;
+    margin: 0 auto;
+    padding: 1.6rem 1.8rem;
+    text-align: left;
+    background-color: var(--bt-warm-black-alt);
+    border-radius: 0.4rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.feature__card-icon {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-icon-clock {
+    background-image: url(./assets/icons/clock.svg);
+}
+
+.card-icon-eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+
+.card-icon-money {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+
+.card-icon-check {
+    background-image: url(./assets/icons/check-circle.svg);
+}
