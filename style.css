@@ -2,6 +2,8 @@
     /*Colores*/
     --bt-orange: #F7931A;
     --bt-orange-alt: #FFE9D4;
+    --bt-blue: #0C8AFF; 
+    --bt-blue-alt: #E7F5FF;
     --bt-just-white: #ffffff;
     --bt-off-white: #FAF8F7;
     --bt-warm-black: #201E1C;
@@ -161,7 +163,7 @@ main {
     width: 90%;
     min-width: 28.8rem;
     max-width: 90rem;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto;
 }
 
 .exchange__text h2 {
@@ -169,39 +171,53 @@ main {
     color: var(--bt-warm-black);
 }
 
-.exchange__tables-currency {
+.exchange__tables-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 32rem;
+    margin: 2rem auto 2rem auto;
+}
+
+.exchange__table-title {
+    font-weight: 700;
+    text-align: left;
+    margin: 2rem 0 1.2rem 2rem;
+}
+
+.table__title-currency {
+    color: var(--bt-orange);
+}
+
+.tables__title-commissions {
+    color: var(--bt-blue);
+}
+
+.exchange__table {
+    margin: 4rem auto;
+    min-width: 23rem;
+    max-width: 30rem;
+}
+
+.exchange__table-currency {
     width: 70%;
     min-width: 23.5rem;
     max-width: 50rem;
-    height: 36rem;
+    height: auto;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
 
-.exchange__tables-title {
-    font-weight: 700;
-    text-align: left;
-    margin-left:1rem;
-}
-
-.tables__title-currency{
-    color: var(--bt-orange);
-}
-
-.exchange__tables-container {
-    width: 90%;
-    min-width: 23rem;
-    max-width: 30rem;
-    height: 25rem;
-    margin: 1.2rem auto 1.2rem auto;
-}
-
-.exchange__tables-container table {
+.exchange__table-container table {
     width: 100%;
     height: 100%;
 }
 
-.exchange__tables-container table td {
+.exchange__table-container table tr {
+    height: 5.5rem;
+}
+.exchange__table-container table td {
     width: 50%;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -210,21 +226,21 @@ main {
     background-color: var(--bt-just-white);
 }
 
-.exchange__tables-container .table__right {
+.exchange__table-container .table__right {
     font-size: var( --bt-font-size-text) ;
     font-weight: 400;
     color: var(--bt-warm-gray);
 }
 
-.exchange__tables-container .table__top-left {
+.exchange__table-container .table__top-left {
     border-top-left-radius: 0.8rem;
 }
 
-.exchange__tables-container .table__top-right {
+.exchange__table-container .table__top-right {
     border-top-right-radius: 0.8rem;
 }
 
-.exchange__tables-container .table__bottom-left {
+.exchange__table-container .table__bottom-left {
     border-bottom-left-radius: 0.8rem;
 }
 
@@ -249,3 +265,34 @@ main {
 .exchange__tables-container .indicator-down {
     background-image: url('./assets/icons/trending-down.svg');
 }
+
+.table__date {
+    width: 20rem;
+    height: 3rem;
+    margin: 1.2rem auto 0 auto;
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+}
+
+.table__date-currency {
+    background-color: var(--bt-orange-alt);
+}
+
+.table__date-commissions {
+    background-color: var(--bt-blue-alt);
+}
+
+.table__date span {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.table__date-currency span {
+    color: var(--bt-warm-black);
+}
+
+.table__date span b {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
