@@ -387,3 +387,25 @@ main {
     padding-top: 6rem ;
 }
 
+.planes__container-main {
+    width: 90%;
+    min-width: 32rem;
+    padding: 6.4rem 0;
+    text-align: center;
+}
+
+.planes__container-text {
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.planes__container-text h2 {
+    color: var(--bt-warm-black);
+}
+
+.planes__container-text p {
+    color: var(--bt-warm-gray);
+    margin: 2.4rem auto 5rem auto;
+}
