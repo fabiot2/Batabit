@@ -516,6 +516,7 @@ main {
 footer {
     display: flex;
     width: 100%;
+    min-width: 32rem;
     height: 15rem;
     background-color:var(--bt-orange) ;
 }
